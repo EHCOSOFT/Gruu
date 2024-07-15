@@ -1,0 +1,148 @@
+.ico {
+    background-size: cover !important;
+    display: inline-block;
+}
+
+.i-error {
+    background: url(../img/ico/i-error.png);
+    height: 12px;
+    width: 12px;
+}
+
+.i-facebook {
+    background: url(../img/ico/i-facebook.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-linkedin {
+    background: url(../img/ico/i-linkedin.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-blog {
+    background: url(../img/ico/i-blog.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-email {
+    background: url(../img/ico/i-email.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-alarm {
+    background: url(../img/ico/i-alerm.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-arrow-right {
+    background: url(../img/ico/i-arrow-right.png);
+    height: 14px;
+    width: 14px;
+}
+
+.i-purple {
+    background: url(../img/ico/i-purple.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-blue {
+    background: url(../img/ico/i-blue.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-orange {
+    background: url(../img/ico/i-orange.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-green {
+    background: url(../img/ico/i-green.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-xls {
+    background: url(../img/ico/i-xls.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-dashboard {
+    background: url(../img/ico/i-dashboard.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-arrow-left-b {
+    background: url(../img/ico/i-arrow-left-b.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-arrow-right-g {
+    background: url(../img/ico/i-arrow-right-g.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-checked {
+    background: url(../img/ico/i-checked.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-right {
+    background: url(../img/ico/i-right.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-file {
+    background: url(../img/ico/i-file.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-file-check {
+    background: url(../img/ico/i-file-check.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-refresh {
+    background: url(../img/ico/i-refresh.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-circle-close {
+    background: url(../img/ico/i-circle-close.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-bookmark {
+    background: url(../img/ico/i-bookmark.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-interest-active {
+    background: url(../img/ico/i-interest-active.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-pencil {
+    background: url(../img/ico/i-pencil.png);
+    height: 12px;
+    width: 12px;
+}

@@ -1,0 +1,46 @@
+.mbsc-ios.mbsc-page {
+    background: none;
+    font-family: var(--font-sans-serif);
+}
+
+.mbsc-button,
+.mbsc-ios.mbsc-datepicker .mbsc-calendar,
+.mbsc-ios.mbsc-datepicker .mbsc-calendar-cell,
+.mbsc-ios.mbsc-datepicker .mbsc-calendar-slide {
+    background: var(--neutrals-800);
+    font-family: var(--font-sans-serif);
+}
+
+.mbsc-calendar-title {
+    font-size: var(--text-lg);
+}
+
+.mbsc-ios.mbsc-calendar-button.mbsc-button {
+    color: var(--primary);
+    
+}
+
+.mbsc-ios.mbsc-selected .mbsc-calendar-cell-text {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.mbsc-ios.mbsc-datepicker .mbsc-highlighted .mbsc-calendar-day-text,
+.mbsc-ios.mbsc-datepicker .mbsc-hover .mbsc-calendar-day-text,
+.mbsc-ios.mbsc-datepicker .mbsc-range-hover-end .mbsc-calendar-day-text,
+.mbsc-ios.mbsc-datepicker .mbsc-range-hover-start .mbsc-calendar-day-text,
+.mbsc-ios.mbsc-datepicker .mbsc-selected .mbsc-calendar-day-text {
+    font-size: 1rem;
+}
+
+.mbsc-ios.mbsc-calendar-today, .mbsc-ios.mbsc-calendar-week-nr {
+    color: var(--primary);
+}
+
+.mbsc-ios.mbsc-hover .mbsc-calendar-cell-text {
+    background: rgba(87, 182, 121, 0.1);
+}
+
+.mbsc-ios.mbsc-calendar-day-text {
+    color: var(--neutrals-200);
+}

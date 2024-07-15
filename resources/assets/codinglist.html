@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOCK MONITORING</title>
+    <link rel="stylesheet" href="css/codinglist.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <h1>BLOCK MONITORING</h1>
+        </header>
+
+        <div class="main">
+            <div class="top_bar">
+                <div class="count">
+                    <ul>
+                        <li>전체: <i>0</i>건</li>
+                        <li>진행중: <i class="orange">0</i>건<span>(0%)</span></li>
+                        <li>완료: <i class="blue">0</i>건<span>(0%)</span></li>
+                        <li>보류: <i class="grey">0</i>건(0%)</li>
+                        <li>제외: <i class="grey">0</i>건(0%)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="table_base">
+                <table id="publishingTable">
+                    <caption>퍼블리싱 리스트</caption>
+                    <thead>
+                        <tr>
+                            <th>NO.</th>
+                            <th>진행상태</th>
+                            <th>화면_ID</th>
+                            <th>구분</th>
+                            <th>화면명</th>
+                            <th>담당자</th>
+                            <th>완료</th>
+                            <th>(재)작업일</th>
+                            <th>개발일</th>
+                            <th>파일명</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td class="orange">진행중</td>
+                            <td></td>
+                            <td>공통</td>
+                            <td class="ta_l"></td>
+                            <td>김선우</td>
+                            <td>-</td>
+                            <td></td>
+                            <td></td>
+                            <td class="ta_l"><a href="common-components.html">common-components.html</a></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var inProgressCount = 0;
+            var completedCount = 0;
+
+            function updateCaseCounts() {
+                var totalCount = $('#publishingTable tbody tr:not(:first-child)').length;
+                var inProgressPercentage = totalCount > 0 ? ((inProgressCount / totalCount) * 100).toFixed(2) : 0;
+                var completedPercentage = totalCount > 0 ? ((completedCount / totalCount) * 100).toFixed(2) : 0;
+
+
+                $('.count li:contains("전체") i').text(totalCount);
+                $('.count li:contains("진행중") i').text(inProgressCount);
+                $('.count li:contains("완료") i').text(completedCount);
+
+                $('.count li:contains("진행중") span').text('(' + inProgressPercentage + '%)');
+                $('.count li:contains("완료") span').text('(' + completedPercentage + '%)');
+            }
+
+            function updateTotalCount() {
+                var totalCount = $('#publishingTable tbody tr').length;
+                $('.count li:contains("전체") i').text(totalCount);
+            }
+
+            function addRow(data) {
+                var rowCount = $('#publishingTable tbody tr').length;
+                var newRow = $('<tr></tr>');
+
+                newRow.append('<td>' + rowCount + '</td>');
+
+                $.each(data, function (index, item) {
+                    var cell = $('<td></td>');
+                    if (index === 0) {
+                        if (item.toLowerCase() === '진행중') {
+                            cell.addClass('orange');
+                            inProgressCount++;
+                        } else if (item.toLowerCase() === '완료') {
+                            cell.addClass('blue');
+                            completedCount++;
+                        }
+                    }
+                    if (index === 8 || index === 9) {
+                        cell.html(item);
+                    } else {
+                        cell.text(item);
+                    }
+                    newRow.append(cell);
+                });
+
+                $('#publishingTable tbody').append(newRow);
+                updateCaseCounts();
+                updateTotalCount();
+            }
+
+           
+
+            addRow(['완료', '', '로그인', '로그인', '김선우', '2024-07-08', '', '', '<a href="로그인.html">로그인</a>', '']); 
+            addRow(['완료', '', '메인', '메인화면', '김선우', '2024-07-08', '', '', '<a href="메인화면.html">메인</a>', '']); 
+            addRow(['완료', '', '메인 > 작업정보 구성도', '작업정보 구성도', '김선우', '2024-07-09', '', '', '<a href="작업정보구성도.html">작업정보구성도</a>', '']); 
+            addRow(['완료', '', '메인 > 블록형상 구성도', '블록형상 구성도', '김선우', '2024-07-10', '', '', '<a href="블록형상구성도.html">블록형상구성도</a>', '']); 
+            addRow(['완료', '', '메인 > 센서연결 구성도', '센서연결 구성도', '김선우', '2024-07-10', '', '', '<a href="센서연결구성도.html">센서연결구성도</a>', '']); 
+            addRow(['완료', '', '메인 > 모니터링 구성도', '모니터링 구성도', '김선우', '2024-07-10', '', '', '<a href="모니터링구성도.html">모니터링구성도</a>', '']); 
+            addRow(['완료', '', '메인 > 데이터확인 구성도', '데이터확인 구성도', '김선우', '2024-07-10', '', '', '<a href="데이터확인구성도.html">데이터확인구성도</a>', '']); 
+
+        });
+    </script>
+</body>
+
+
+</html>

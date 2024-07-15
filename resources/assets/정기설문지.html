@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <main>
+            <section class="regular-survey">
+                <div class="regular-header">
+                    <h1>
+                        <서울스타트업지원센터> 2024년 5월 정기 설문
+                    </h1>
+                    <p><span>*이번 달에 해당하는 내용만 적어주세요.</span><br>*모든 항목은 필수 입력입니다. (해당사항이 없는 경우는 ‘없음’에 체크하세요.)<br>
+                        *정보 수집에 동의하신 항목은 비활성으로 표시됩니다.</p>
+                </div>
+                <div class="container">
+                    <div class="regular-body">
+                        <div class="top">
+                            <ul class="progress-wrap">
+                                <li>
+                                    <div class="progress-group active">
+                                        <i class="normal">1</i>
+                                        매출 · 고용 · 투자
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progress-group">
+                                        <i class="normal">2</i>
+                                        특허
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progress-group">
+                                        <i class="normal">3</i>
+                                        정부 지원 · 수상
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progress-group">
+                                        <i class="normal">4</i>
+                                        기타 활동
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progress-group">
+                                        <i class="normal">5</i>
+                                        완료
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sales-group">
+                            <div class="sales">
+                                <h1>국내 매출</h1>
+                                <div class="sales-area">
+                                    <div class="input-area">
+                                        <div class="input-group undeline right">
+                                            <input type="text" value="1234,1234,1234">
+                                            <small><span>1234억 1234만 1234</span></small>
+                                        </div>
+                                        <span class="text">원</span>
+                                    </div>
+                                    <div class="check-group md">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04">없음</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sales">
+                                <h1>해외 매출</h1>
+                                <div class="sales-area">
+                                    <div class="input-area">
+                                        <div class="input-group undeline right">
+                                            <input type="text" value="1234,1234,1234">
+                                            <small><span>1234억 1234만 1234</span></small>
+                                        </div>
+                                        <span class="text">원</span>
+                                    </div>
+                                    <div class="check-group md">
+                                        <input type="checkbox" id="chk21">
+                                        <label for="chk21">없음</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <h1>부가가치세과세표준증명</h1>
+                            <div class="regular-area">
+                                <div class="file-group">
+                                    <div class="file-area">
+                                        <input type="file" id="fileUpload">
+                                        <label for="fileUpload" class="file-label"><i class="ico i-file"></i>클릭하여 파일
+                                            업로드</label>
+                                        <div class="check-group md">
+                                            <input type="checkbox" id="chk20">
+                                            <label for="chk20">없음</label>
+                                        </div>
+                                    </div>
+                                    <small>PDF 혹은 이미지 파일(PNG, JPG)만 업로드 할 수 있습니다.</small>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <h1>총 고용 인원수(4대보험 가입자)</h1>
+                            <div class="regular-area">
+                                <div class="input-area">
+                                    <div class="input-group undeline">
+                                        <input type="text" disabled placeholder="숫자를 적어주세요.">
+                                    </div>
+                                    <span class="text">명</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales-group">
+                            <div class="sales">
+                                <h1>가입자</h1>
+                                <div class="sales-area">
+                                    <div class="input-area">
+                                        <div class="input-group undeline error">
+                                            <input type="number" value="1234,1234,1234">
+                                            <small><i class="ico i-error"></i>숫자만 입력할 수 있습니다.</small>
+                                        </div>
+                                        <span class="text">원</span>
+                                    </div>
+                                    <div class="check-group md">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04">없음</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sales">
+                                <h1>퇴사자</h1>
+                                <div class="sales-area">
+                                    <div class="input-area">
+                                        <div class="input-group undeline">
+                                            <input type="number" value="1234,1234,1234">
+                                        </div>
+                                        <span class="text">원</span>
+                                    </div>
+                                    <div class="check-group md">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04">없음</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <h1>4대 보험 가입자 명부</h1>
+                            <div class="regular-area">
+                                <div class="file-group check">
+                                    <div class="file-area">
+                                        <i class="ico i-file-check"></i>
+                                        <p>filename.png</p>
+                                        <input type="file" id="fileUpload">
+                                        <label for="fileUpload" class="file-label"><i
+                                                class="ico i-refresh"></i>다시올리기</label>
+                                    </div>
+                                    <small>PDF 혹은 이미지 파일(PNG, JPG)만 업로드 할 수 있습니다.</small>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <h1>투자 유치</h1>
+                            <div class="regular-area vertical">
+                                <table class="table" id="investment">
+                                    <colgroup>
+                                        <col style="width: 108px;">
+                                        <col style="width: 104px;">
+                                        <col style="width: 240px;">
+                                        <col style="width: 152px;">
+                                        <col style="width: 152px;">
+                                        <col style="width: autopx;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="table-header">
+                                                    <h6>구분</h6>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table-header">
+                                                    <h6>투자 일자</h6>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table-header">
+                                                    <h6>투자처</h6>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table-header">
+                                                    <h6>밸류(원)</h6>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table-header">
+                                                    <h6>투자유치금(원)</h6>
+                                                </div>
+                                            </th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Seed</strong></td>
+                                            <td>2024-05-25</td>
+                                            <td><strong>서울스타트업지원센터</strong></td>
+                                            <td>1234억 1234만 1234</td>
+                                            <td><strong>1234억 1234만 1234</strong></td>
+                                            <td><button type="button" class="btn-item-del"><i
+                                                        class="ico i-circle-close"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Seed</strong></td>
+                                            <td>2024-05-25</td>
+                                            <td><strong>서울스타트업지원센터</strong></td>
+                                            <td>1234억 1234만 1234</td>
+                                            <td><strong>1234억 1234만 1234</strong></td>
+                                            <td><button type="button" class="btn-item-del"><i
+                                                        class="ico i-circle-close"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Seed</strong></td>
+                                            <td>2024-05-25</td>
+                                            <td><strong>서울스타트업지원센터</strong></td>
+                                            <td>1234억 1234만 1234</td>
+                                            <td><strong>1234억 1234만 1234</strong></td>
+                                            <td><button type="button" class="btn-item-del"><i
+                                                        class="ico i-circle-close"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Seed</strong></td>
+                                            <td>2024-05-25</td>
+                                            <td><strong>서울스타트업지원센터</strong></td>
+                                            <td>1234억 1234만 1234</td>
+                                            <td><strong>1234억 1234만 1234</strong></td>
+                                            <td><button type="button" class="btn-item-del"><i
+                                                        class="ico i-circle-close"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="regular-item-add">
+                                    <div class="dropdown-group md">
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop01">
+                                                <span class="placeholder">구분</span>
+                                            </button>
+                                            <ul id="drop01" class="dropdown-list">
+                                                <li><a href="#" data-value="Seed">Seed</a></li>
+                                                <li><a href="#" data-value="Series A">Series A</a></li>
+                                                <li><a href="#" data-value="Series B">Series B</a></li>
+                                                <li><a href="#" data-value="Series C">Series C</a></li>
+                                                <li><a href="#" data-value="IPO">IPO</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="date-group" mbsc-page class="demo-mobile-desktop-display">
+                                        <input class="datepicker" mbsc-input data-label-style="stacked"
+                                            placeholder="투자 일자">
+                                    </div>
+                                    <div class="input-group undeline">
+                                        <input type="text" placeholder="투자처">
+                                    </div>
+                                    <div class="input-group undeline">
+                                        <input type="text" placeholder="벨류 금액">
+                                    </div>
+                                    <div class="input-group undeline">
+                                        <input type="text" placeholder="투자유치금액">
+                                    </div>
+                                </div>
+                                <div class="regular-item-op">
+                                    <div class="check-group md">
+                                        <input type="checkbox" id="chk11">
+                                        <label for="chk11">없음</label>
+                                    </div>
+                                    <button type="button" class="btn btn-md btn-gray btn-invest-add">추가</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <h1>등록</h1>
+                            <div class="regular-area vertical">
+                                <table class="table" id="registration">
+                                    <colgroup>
+                                        <col style="width: 108px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="table-header">
+                                                    <h6>등록 일자</h6>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table-header">
+                                                    <h6>명칭</h6>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2" class="no-content-row">
+                                                <div class="no-content">
+                                                    <p>아래 입력창에 내용을 적고 추가 버튼을 누르세요</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="registration-item-add">
+                                    <div class="date-group" mbsc-page class="demo-mobile-desktop-display">
+                                        <input class="datepicker registration-date" mbsc-input data-label-style="stacked"
+                                            placeholder="등록 일자">
+                                    </div>
+                                    <div class="input-group undeline">
+                                        <input type="text" placeholder="명칭">
+                                    </div>
+                                </div>
+                                <div class="regular-item-op">
+                                    <div class="check-group md">
+                                        <input type="checkbox" id="chk15">
+                                        <label for="chk15">없음</label>
+                                    </div>
+                                    <button type="button" class="btn btn-md btn-gray btn-regi-add">추가</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-primary btn-next" disabled>다음으로</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/mobiscroll.jquery.min.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>

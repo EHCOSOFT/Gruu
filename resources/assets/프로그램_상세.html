@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <!-- S : Header-->
+        <header class="header" id="header"></header>
+        <!-- E : Header-->
+
+
+        <main>
+            <section class="program-detail">
+                <aside class="program-nav">
+                    <ul>
+                        <li class="active">
+                            <a href=""><i class="ico i-green"></i>현황</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="ico i-orange"></i>스케줄</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="ico i-purple"></i>멘토링 일지</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="ico i-blue"></i>만족도 조사</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href=""><i class="ico i-xls"></i>종합보고서(PDF)</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="ico i-xls"></i>진단 데이터(XLS)</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="ico i-dashboard"></i>대시보드</a>
+                        </li>
+                    </ul>
+                </aside>
+                <section class="scroll">
+                    <div class="program-wrap">
+                        <div class="program-detail-header">
+                            <div class="top">
+                                <a href="#" class="back"><i class="ico i-arrow-left-b"></i>목록으로</a>
+                                <div class="depth-group">
+                                    <ul>
+                                        <li><a href="#">홈</a></li>
+                                        <li><i class="ico i-arrow-right-g"></i></li>
+                                        <li><a href="#">프로그램</a></li>
+                                        <li><i class="ico i-arrow-right-g"></i></li>
+                                        <li><a href="#">상세정보</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="program-detail-title">
+                                <div class="top">
+                                    <h1>2024년 엑셀레이팅 기반 스타트업 육성 지원사업 2024년 엑셀레이팅 기반 스타트업 육성 지원사업</h1>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-md btn-outline-gray open-modal"
+                                            data-modal-id="programInfoEditModal">프로그램 정보 수정</button>
+                                        <button type="button" class="btn btn-md btn-gray open-modal"
+                                            data-modal-id="attendEditModal">참가 기업 편집</button>
+                                    </div>
+                                </div>
+                                <dl>
+                                    <dt>PAS 진단</dt>
+                                    <dd>2024-05-21 ~ 2024-07-24</dd>
+                                </dl>
+                                <p>프로그램 추가 시 <설명> 항목에 입력한 내용</p>
+                            </div>
+                        </div>
+                        <div class="program-progress">
+                            <div class="title">
+                                <p>진행현황</p>
+                            </div>
+                            <div class="box">
+                                <div class="top">
+                                    <ul class="progress-wrap">
+                                        <li>
+                                            <div class="progress-group">
+                                                <i class="ico i-checked"></i>
+                                                등록
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="progress-group active">
+                                                <i class="normal">2</i>
+                                                기업 설문
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="progress-group">
+                                                <i class="normal">3</i>
+                                                인터뷰
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="progress-group">
+                                                <i class="normal">4</i>
+                                                결과 보고
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="progress-group">
+                                                <i class="normal">5</i>
+                                                완료
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <ul>
+                                        <li>
+                                            <dl>
+                                                <dt>참가기업</dt>
+                                                <dd>147</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>설문 완료</dt>
+                                                <dd>42</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>진단 리포트 완료</dt>
+                                                <dd>9</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>멘토링 일지 완료</dt>
+                                                <dd>9</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-company">
+                            <div class="title">
+                                <p>참가기업</p>
+                            </div>
+                            <div class="box">
+                                <div class="program-tab">
+                                    <div class="tab-container">
+                                        <div class="tabs" id="tab-scroll">
+                                            <div class="tab active">전체 64</div>
+                                            <div class="tab">설문 완료 42</div>
+                                            <div class="tab">설문 미완료 105</div>
+                                            <div class="tab">진단(1차) 완료 123</div>
+                                            <div class="tab">진단(1차) 미완료123</div>
+                                            <div class="tab">진단(2차) 완료 212</div>
+                                            <div class="tab">진단(2차) 미완료 212</div>
+                                        </div>
+                                        <div class="tab-scroll">
+                                            <button type="button" class="tab-right"></button>
+                                        </div>
+                                    </div>
+                                    <div class="input-group search-group">
+                                        <input type="text" placeholder="기업, 대표자, 멘토 이름으로 검색">
+                                        <button type="submit"></button>
+                                    </div>
+                                </div>
+                                <div class="program-list">
+                                    <table class="table">
+                                        <colgroup>
+                                            <col style="width: auto;">
+                                            <col style="width: 104px;">
+                                            <col style="width: 104px;">
+                                            <col style="width: 176px;">
+                                            <col style="width: 176px;">
+                                            <col style="width: 176px;">
+                                            <col style="width: 164px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="table-header">
+                                                        <h6>기업명</h6>
+                                                        <button type="button"></button>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="table-header">
+                                                        <h6>대표자</h6>
+                                                        <button type="button"></button>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="table-header">
+                                                        <h6>멘토</h6>
+                                                        <button type="button"></button>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="table-header">
+                                                        <h6>기업 설문</h6>
+                                                        <button type="button"></button>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="table-header">
+                                                        <h6>진단 리포트 (1차)</h6>
+                                                        <button type="button"></button>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="table-header">
+                                                        <h6>진단 리포트 (2차)</h6>
+                                                        <button type="button"></button>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="table-header">
+                                                        <h6>기타 문서</h6>
+                                                        <button type="button"></button>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="company-name">
+                                                        <strong>기업성장데이터랩</strong>
+
+                                                        <div class="dropdown-group">
+                                                            <div class="dropdown-list-wrap">
+                                                                <button type="button"
+                                                                    class="dropdown-button btn-company-menu"
+                                                                    data-target="drop01"></button>
+                                                                <ul id="drop01" class="dropdown-list">
+                                                                    <li><a href="#">설문 링크 복사</a></li>
+                                                                    <li><a href="#">기업 데이터 조회</a></li>
+                                                                    <li><a href="#">정보 수정</a></li>
+                                                                    <li class="disabled"><a href="#">멘토 배정</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>김성우</td>
+                                                <td>노세욱</td>
+                                                <td><strong class="primary">완료 24-06-12 15:30</strong></td>
+                                                <td><strong>완료 24-06-12 15:30</strong></td>
+                                                <td><strong>완료 24-06-12 15:30</strong></td>
+                                                <td>
+                                                    <div class="dropdown-group">
+                                                        <div class="dropdown-list-wrap">
+                                                            <button class="dropdown-button" data-target="drop02">
+                                                                <span class="placeholder">선택</span>
+                                                            </button>
+                                                            <ul id="drop02" class="dropdown-list">
+                                                                <li><a href="">기관 전용 리포트 1</a></li>
+                                                                <li><a href="">기관 전용 리포트 2</a></li>
+                                                                <li class="disabled"><a href="">사업 계획서</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="company-name">
+                                                        <strong>기업성장데이터랩</strong>
+
+                                                        <div class="dropdown-group">
+                                                            <div class="dropdown-list-wrap">
+                                                                <button type="button"
+                                                                    class="dropdown-button btn-company-menu"
+                                                                    data-target="drop01"></button>
+                                                                <ul id="drop01" class="dropdown-list">
+                                                                    <li><a href="#">설문 링크 복사</a></li>
+                                                                    <li><a href="#">기업 데이터 조회</a></li>
+                                                                    <li><a href="#">정보 수정</a></li>
+                                                                    <li class="disabled"><a href="#">멘토 배정</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>김성우</td>
+                                                <td>노세욱</td>
+                                                <td><strong class="primary">완료 24-06-12 15:30</strong></td>
+                                                <td><strong>완료 24-06-12 15:30</strong></td>
+                                                <td><strong>완료 24-06-12 15:30</strong></td>
+                                                <td>
+                                                    <div class="dropdown-group">
+                                                        <div class="dropdown-list-wrap">
+                                                            <button class="dropdown-button" data-target="drop02">
+                                                                <span class="placeholder">선택</span>
+                                                            </button>
+                                                            <ul id="drop02" class="dropdown-list">
+                                                                <li><a href="">기관 전용 리포트 1</a></li>
+                                                                <li><a href="">기관 전용 리포트 2</a></li>
+                                                                <li class="disabled"><a href="">사업 계획서</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="company-name">
+                                                        <strong>기업성장데이터랩</strong>
+
+                                                        <div class="dropdown-group">
+                                                            <div class="dropdown-list-wrap">
+                                                                <button type="button"
+                                                                    class="dropdown-button btn-company-menu"
+                                                                    data-target="drop01"></button>
+                                                                <ul id="drop01" class="dropdown-list">
+                                                                    <li><a href="#">설문 링크 복사</a></li>
+                                                                    <li><a href="#">기업 데이터 조회</a></li>
+                                                                    <li><a href="#">정보 수정</a></li>
+                                                                    <li class="disabled"><a href="#">멘토 배정</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>김성우</td>
+                                                <td>노세욱</td>
+                                                <td><strong class="primary">완료 24-06-12 15:30</strong></td>
+                                                <td><strong>완료 24-06-12 15:30</strong></td>
+                                                <td><strong>완료 24-06-12 15:30</strong></td>
+                                                <td>
+                                                    <div class="dropdown-group">
+                                                        <div class="dropdown-list-wrap">
+                                                            <button class="dropdown-button" data-target="drop02">
+                                                                <span class="placeholder">선택</span>
+                                                            </button>
+                                                            <ul id="drop02" class="dropdown-list">
+                                                                <li><a href="">기관 전용 리포트 1</a></li>
+                                                                <li><a href="">기관 전용 리포트 2</a></li>
+                                                                <li class="disabled"><a href="">사업 계획서</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="company-name">
+                                                        <strong>기업성장데이터랩</strong>
+
+                                                        <div class="dropdown-group">
+                                                            <div class="dropdown-list-wrap">
+                                                                <button type="button"
+                                                                    class="dropdown-button btn-company-menu"
+                                                                    data-target="drop01"></button>
+                                                                <ul id="drop01" class="dropdown-list">
+                                                                    <li><a href="#">설문 링크 복사</a></li>
+                                                                    <li><a href="#">기업 데이터 조회</a></li>
+                                                                    <li><a href="#">정보 수정</a></li>
+                                                                    <li class="disabled"><a href="#">멘토 배정</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>김성우</td>
+                                                <td><strong class="gray">미배정</strong></td>
+                                                <td><strong class="primary">완료 24-06-12 15:30</strong></td>
+                                                <td><strong class="gray">미등록</strong></td>
+                                                <td><strong>완료 24-06-12 15:30</strong></td>
+                                                <td>
+                                                    <div class="dropdown-group">
+                                                        <div class="dropdown-list-wrap">
+                                                            <button class="dropdown-button disabled"
+                                                                data-target="drop02">
+                                                                <span class="placeholder">선택</span>
+                                                            </button>
+                                                            <ul id="drop02" class="dropdown-list">
+                                                                <li><a href="">기관 전용 리포트 1</a></li>
+                                                                <li><a href="">기관 전용 리포트 2</a></li>
+                                                                <li class="disabled"><a href="">사업 계획서</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </section>
+
+            </section>
+        </main>
+
+
+        <!-- S : Footer -->
+        <footer class="footer" id="footer"></footer>
+        <!-- E : Footer -->
+    </div>
+
+    <!-- S : programInfoEditModal :: 프로그램 정보 수정 -->
+    <div id="programInfoEditModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content modal-sm">
+                <div class="modal-header">
+                    <h1 class="modal-title">프로그램 정보 수정</h1>
+                    <button type="button" class="btn-modal-close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-wrap">
+                        <div class="radio-wrap">
+                            <h4>타이틀<span>필수</span><b>(PAS 진단과 IAM DB 프로그램 추가는 그루 담당자에게 문의해주세요.)</b></h4>
+                            <div class="radio-area">
+                                <div class="radio-group">
+                                    <input type="radio" id="radio01" name="radio01">
+                                    <label for="radio01">지원사업</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio02" name="radio01">
+                                    <label for="radio02">교육</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio03" name="radio01">
+                                    <label for="radio03">세미나·행사</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio04" name="radio01">
+                                    <label for="radio04">기타</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group undeline">
+                            <label for="">프로그램명<span>필수</span></label>
+                            <input type="text" placeholder="프로그램명을 입력해주세요.">
+                            <small><span>0 / 50</span></small>
+                        </div>
+                        <div class="date-wrap">
+                            <h4>진행 기간<span>필수</span></h4>
+                            <div class="date-area">
+                                <div class="date-group" mbsc-page class="demo-mobile-desktop-display">
+                                    <input class="datepicker" mbsc-input data-label-style="stacked"
+                                        placeholder="진행기간을 선택해주세요.">
+                                </div>
+                                <span>~</span>
+                                <div class="date-group" mbsc-page class="demo-mobile-desktop-display">
+                                    <input class="datepicker" mbsc-input data-label-style="stacked"
+                                        placeholder="진행기간을 선택해주세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group undeline">
+                            <label for="">설명</label>
+                            <input type="text" placeholder="프로그램 내용을 간단하게 적어주세요.">
+                            <small><span>0 / 1,000</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-md btn-primary">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : programInfoEditModal -->
+
+    <!-- S : attendEditModal :: 참가 기업 편집 -->
+    <div id="attendEditModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content modal-lg">
+                <div class="modal-header">
+                    <h1 class="modal-title">참가 기업 편집</h1>
+                    <button type="button" class="btn-modal-close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="attend-group">
+                        <div class="all-company">
+                            <div class="title">
+                                <h3>전체기업</h3>
+                                <div class="input-group search-group sm">
+                                    <input type="text" placeholder="기업, 대표자 이름으로 검색">
+                                    <button type="submit"></button>
+                                </div>
+                            </div>
+                            <div class="all-company-list">
+                                <div class="top">
+                                    <div class="check-group sm">
+                                        <input type="checkbox" id="chkAll">
+                                        <label for="chkAll">전체 선택</label>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li class="active">
+                                        <div class="check-group sm">
+                                            <input type="checkbox" id="chk01">
+                                            <label for="chk01"></label>
+                                        </div>
+                                        <h4>기업성장데이터랩</h4>
+                                        <span>김성우</span>
+                                    </li>
+                                    <li>
+                                        <div class="check-group sm">
+                                            <input type="checkbox" id="chk02">
+                                            <label for="chk02"></label>
+                                        </div>
+                                        <h4>선라이트솔루션</h4>
+                                        <span>신진환</span>
+                                    </li>
+                                    <li>
+                                        <div class="check-group sm">
+                                            <input type="checkbox" id="chk03">
+                                            <label for="chk03"></label>
+                                        </div>
+                                        <h4>더비건디저트</h4>
+                                        <span>안준웅</span>
+                                    </li>
+                                    <li>
+                                        <div class="check-group sm">
+                                            <input type="checkbox" id="chk04">
+                                            <label for="chk04"></label>
+                                        </div>
+                                        <h4>디지택스</h4>
+                                        <span>표도연</span>
+                                    </li>
+                                    <li>
+                                        <div class="check-group sm">
+                                            <input type="checkbox" id="chk05">
+                                            <label for="chk05"></label>
+                                        </div>
+                                        <h4>이노바테크</h4>
+                                        <span>서동수</span>
+                                    </li>
+
+                                    <li>
+                                        <div class="check-group sm">
+                                            <input type="checkbox" id="chk06">
+                                            <label for="chk06"></label>
+                                        </div>
+                                        <h4>프레쉬바이트</h4>
+                                        <span>심진성</span>
+                                    </li>
+                                    <li>
+                                        <div class="check-group sm">
+                                            <input type="checkbox" id="chk07">
+                                            <label for="chk07"></label>
+                                        </div>
+                                        <h4>제스티베스티</h4>
+                                        <span>양윤하</span>
+                                    </li>
+                                    <li>
+                                        <div class="check-group sm">
+                                            <input type="checkbox" id="chk08">
+                                            <label for="chk08"></label>
+                                        </div>
+                                        <h4>에코소프트</h4>
+                                        <span>김선우</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <i class="ico i-right"></i>
+                        <div class="attend-company">
+                            <div class="title">
+                                <h3>참가기업</h3>
+                            </div>
+                            <div class="selected-company">
+                                <div class="top">
+                                    <p>선택<span>0</span></p>
+                                    <button type="button" class="btn btn-outline-gray btn-mn btn-all-del">전체 취소</button>
+                                </div>
+                                <div class="selected-area">
+                                    <div class="selected-group">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-md btn-primary">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : attendEditModal -->
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/mobiscroll.jquery.min.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
