@@ -146,3 +146,27 @@
     height: 12px;
     width: 12px;
 }
+
+.i-profile {
+    background: url(../img/ico/i-profile.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-set {
+    background: url(../img/ico/i-set.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-about {
+    background: url(../img/ico/i-about.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-logout {
+    background: url(../img/ico/i-logout.png);
+    height: 32px;
+    width: 32px;
+}

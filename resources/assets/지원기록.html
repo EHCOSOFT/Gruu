@@ -11,6 +11,7 @@
 <body>
 
     <div class="wrap">
+        <header class="header" id="header"></header>
         <main>
             <section class="support">
                 <div class="container">
@@ -314,7 +315,7 @@
                             <div class="work-note">
                                 <div class="work-note-header">
                                     <h6>업무 노트</h6>
-                                    <button type="button" class="btn btn-sm btn-primary open-modal" data-modal-id="newNoteWriteModal">새로운 노트 작성</button>
+                                    <button type="button" class="btn btn-md btn-primary open-modal" data-modal-id="newNoteWriteModal">새로운 노트 작성</button>
                                 </div>
                                 <div class="work-note-body">
                                     <div class="note-none">
@@ -338,60 +339,20 @@
                                                 <p>접힌 상태 디자인. 제목영역. 디폴트는 접힘</p>
                                             </div>
                                             <div class="accordion-content">
-                                                <ul class="comment">
+                                                <ul class="writing">
                                                     <li>
-                                                        <div class="comment-item">
-                                                            <div class="comment-header">
+                                                        <div class="writing-item">
+                                                            <div class="writing-header">
                                                                 <h5>박주임</h5>
                                                                 <p>2024-11-14 10:21 수정됨</p>
                                                                 <div class="btn-group">
                                                                     <button type="button"
-                                                                        class="btn btn-comment-edit"></button>
+                                                                        class="btn btn-writing-edit"></button>
                                                                     <button type="button"
-                                                                        class="btn btn-comment-del"></button>
+                                                                        class="btn btn-writing-del"></button>
                                                                 </div>
                                                             </div>
-                                                            <div class="comment-body">
-                                                                <p>본문: 국회는 헌법 또는 법률에 특별한 규정이 없는 한 재적의원 과반수의 출석과 출석의원
-                                                                    과반수의 찬성으로 의결한다. 가부동수인 때에는 부결된 것으로 본다.
-                                                                    수정 삭제는 작성자만 가능. 수정 클릭시: 수정 모달 오픈, 삭제 클릭시 경고 팝업 오픈
-                                                                    북마크, 관심 설정은 다른 사용자와 공유되지 않음</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="active">
-                                                        <div class="comment-item">
-                                                            <div class="comment-header">
-                                                                <h5>박주임</h5>
-                                                                <p>2024-11-14 10:21 수정됨</p>
-                                                                <div class="btn-group">
-                                                                    <button type="button"
-                                                                        class="btn btn-comment-edit"></button>
-                                                                    <button type="button"
-                                                                        class="btn btn-comment-del"></button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="comment-body">
-                                                                <p>본문: 국회는 헌법 또는 법률에 특별한 규정이 없는 한 재적의원 과반수의 출석과 출석의원
-                                                                    과반수의 찬성으로 의결한다. 가부동수인 때에는 부결된 것으로 본다.
-                                                                    수정 삭제는 작성자만 가능. 수정 클릭시: 수정 모달 오픈, 삭제 클릭시 경고 팝업 오픈
-                                                                    북마크, 관심 설정은 다른 사용자와 공유되지 않음</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="comment-item">
-                                                            <div class="comment-header">
-                                                                <h5>박주임</h5>
-                                                                <p>2024-11-14 10:21 수정됨</p>
-                                                                <div class="btn-group">
-                                                                    <button type="button"
-                                                                        class="btn btn-comment-edit"></button>
-                                                                    <button type="button"
-                                                                        class="btn btn-comment-del"></button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="comment-body">
+                                                            <div class="writing-body">
                                                                 <p>본문: 국회는 헌법 또는 법률에 특별한 규정이 없는 한 재적의원 과반수의 출석과 출석의원
                                                                     과반수의 찬성으로 의결한다. 가부동수인 때에는 부결된 것으로 본다.
                                                                     수정 삭제는 작성자만 가능. 수정 클릭시: 수정 모달 오픈, 삭제 클릭시 경고 팝업 오픈
@@ -400,6 +361,41 @@
                                                         </div>
                                                     </li>
                                                 </ul>
+                                                <div class="comment">
+                                                    <div class="comment-top">
+                                                        <h6>댓글</h6>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="active">
+                                                            <div class="comment-item">
+                                                                <div class="comment-header">
+                                                                    <h5>박주임</h5>
+                                                                    <p>2024-11-14 10:21 수정됨</p>
+                                                                    <div class="btn-group">
+                                                                        <button type="button"
+                                                                            class="btn btn-comment-edit"></button>
+                                                                        <button type="button"
+                                                                            class="btn btn-comment-del"></button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="comment-body">
+                                                                    <p>댓글<br>댓글<br>댓글<br>댓글<br></p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="comment-item">
+                                                                <div class="comment-header">
+                                                                    <h5>박주임</h5>
+                                                                    <p>2024-11-14 10:21</p>
+                                                                </div>
+                                                                <div class="comment-body">
+                                                                    <p>댓글<br>댓글<br>댓글<br>댓글<br></p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 <div class="comment-write">
                                                     <div class="textarea-group">
                                                         <textarea name="" id="" placeholder="내용을 입력하세요."></textarea>

@@ -357,6 +357,10 @@ textarea {
     color: var(--neutrals-200);
 }
 
+.header nav ul li a:hover {
+    color: var(--neutrals-200);
+}
+
 .header .right {
     align-items: center;
     display: flex;
@@ -386,6 +390,14 @@ textarea {
     align-items: center;
     display: flex;
     gap: 12px;
+    position: relative;
+}
+
+.user-profile {
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    position: relative;
 }
 
 .header .user-img {
@@ -404,6 +416,67 @@ textarea {
     display: flex;
     gap: 4px;
     line-height: 20px;
+    position: relative;
+}
+
+.user-menu-area {
+    align-items: center;
+    background: var(--neutrals-800);
+    box-shadow: 0px 16px 64px 0px rgba(31, 47, 70, 0.15);
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    padding: 16px;
+    top: 58px;
+    width: 212px;
+    right: 0;
+    z-index: 99;
+}
+
+.user-menu-area.active {
+    display: flex;
+}
+
+.user-menu-area::before {
+    background: url(../img/ico/i-trg.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    position: absolute;
+    top: -12px;
+    right: 26px;
+    width: 32px;
+}
+
+.user-menu-area li {
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+.user-menu-area li a {
+    align-items: center;
+    color: var(--neutrals-300);
+    font-size: var(--text-md);
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.user-menu-area li.active a {
+    color: var(--primary);
+}
+
+.user-menu-area hr {
+    background: var(--neutrals-600);
+    margin: 0;
+    opacity: 0.2;
+    width: 100%;
 }
 
 /* **************************************** *
@@ -442,7 +515,7 @@ textarea {
 
 .footer-info h6 {
     color: var(--neutrals-200);
-    font-size: var(--text-md);
+    font-size: 15px;
     font-weight: bold;
     line-height: 20px;
     margin: 0 0 20px 0;
@@ -453,7 +526,7 @@ textarea {
     color: var(--neutrals-200);
     display: flex;
     gap: 8px;
-    font-size: 10px;
+    font-size: var(--text-mn);
     font-weight: 400;
     line-height: 14px;
 }
@@ -466,12 +539,12 @@ textarea {
 
 .footer-info ul li {
     color: var(--neutrals-200);
-    font-size: 10px;
+    font-size: var(--text-mn);
 }
 
 .footer-info ul li a {
     color: var(--neutrals-200);
-    font-size: 10px;
+    font-size: var(--text-mn);
 }
 
 .footer-info ul li strong {
@@ -1158,7 +1231,7 @@ button:hover {
 .tabs {
     cursor: pointer;
     display: flex;
-    gap: 16px;
+    gap: 8px;
     justify-content: flex-start;
 }
 

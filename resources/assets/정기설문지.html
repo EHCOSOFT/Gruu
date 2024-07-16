@@ -11,9 +11,12 @@
 <body>
 
     <div class="wrap">
+
         <main>
+
             <section class="regular-survey">
                 <div class="regular-header">
+                    <h6>서울스타트업지원센터<span>2024년 엑셀러레이팅 기반 스타트업 육성 지원사업</span></h6>
                     <h1>
                         <서울스타트업지원센터> 2024년 5월 정기 설문
                     </h1>
@@ -62,13 +65,14 @@
                                 <div class="sales-area">
                                     <div class="input-area">
                                         <div class="input-group undeline right">
-                                            <input type="text" value="1234,1234,1234">
+                                            <input type="text" class="input-number-display" placeholder="">
+                                            <input type="hidden" class="input-number" value="1234,1234,1234">
                                             <small><span>1234억 1234만 1234</span></small>
                                         </div>
                                         <span class="text">원</span>
                                     </div>
                                     <div class="check-group md">
-                                        <input type="checkbox" id="chk04">
+                                        <input type="checkbox" class="input-none" id="chk04">
                                         <label for="chk04">없음</label>
                                     </div>
                                 </div>
@@ -78,13 +82,14 @@
                                 <div class="sales-area">
                                     <div class="input-area">
                                         <div class="input-group undeline right">
-                                            <input type="text" value="1234,1234,1234">
+                                            <input type="text" class="input-number-display" placeholder="">
+                                            <input type="hidden" class="input-number" value="1234,1234,1234">
                                             <small><span>1234억 1234만 1234</span></small>
                                         </div>
                                         <span class="text">원</span>
                                     </div>
                                     <div class="check-group md">
-                                        <input type="checkbox" id="chk21">
+                                        <input type="checkbox" class="input-none" id="chk21">
                                         <label for="chk21">없음</label>
                                     </div>
                                 </div>
@@ -98,10 +103,7 @@
                                         <input type="file" id="fileUpload">
                                         <label for="fileUpload" class="file-label"><i class="ico i-file"></i>클릭하여 파일
                                             업로드</label>
-                                        <div class="check-group md">
-                                            <input type="checkbox" id="chk20">
-                                            <label for="chk20">없음</label>
-                                        </div>
+
                                     </div>
                                     <small>PDF 혹은 이미지 파일(PNG, JPG)만 업로드 할 수 있습니다.</small>
                                 </div>
@@ -113,7 +115,8 @@
                             <div class="regular-area">
                                 <div class="input-area">
                                     <div class="input-group undeline">
-                                        <input type="text" disabled placeholder="숫자를 적어주세요.">
+                                        <input type="text" class="input-number-display" placeholder="숫자를 적어주세요.">
+                                        <input type="hidden" class="input-number" value="1234,1234,1234">
                                     </div>
                                     <span class="text">명</span>
                                 </div>
@@ -124,15 +127,16 @@
                                 <h1>가입자</h1>
                                 <div class="sales-area">
                                     <div class="input-area">
-                                        <div class="input-group undeline error">
-                                            <input type="number" value="1234,1234,1234">
-                                            <small><i class="ico i-error"></i>숫자만 입력할 수 있습니다.</small>
+                                        <div class="input-group undeline">
+                                            <input type="text" class="input-number-display" placeholder="숫자를 적어주세요.">
+                                            <input type="hidden" class="input-number" value="1234,1234,1234">
+                                            <!-- <small><i class="ico i-error"></i>숫자만 입력할 수 있습니다.</small> -->
                                         </div>
-                                        <span class="text">원</span>
+                                        <span class="text">명</span>
                                     </div>
                                     <div class="check-group md">
-                                        <input type="checkbox" id="chk04">
-                                        <label for="chk04">없음</label>
+                                        <input type="checkbox" class="input-none" id="chk002">
+                                        <label for="chk002">없음</label>
                                     </div>
                                 </div>
                             </div>
@@ -141,13 +145,14 @@
                                 <div class="sales-area">
                                     <div class="input-area">
                                         <div class="input-group undeline">
-                                            <input type="number" value="1234,1234,1234">
+                                            <input type="text" class="input-number-display" placeholder="숫자를 적어주세요.">
+                                            <input type="hidden" class="input-number" value="1234,1234,1234">
                                         </div>
-                                        <span class="text">원</span>
+                                        <span class="text">명</span>
                                     </div>
                                     <div class="check-group md">
-                                        <input type="checkbox" id="chk04">
-                                        <label for="chk04">없음</label>
+                                        <input type="checkbox" class="input-none" id="chk11">
+                                        <label for="chk11">없음</label>
                                     </div>
                                 </div>
                             </div>
@@ -155,13 +160,12 @@
                         <div class="regular-item">
                             <h1>4대 보험 가입자 명부</h1>
                             <div class="regular-area">
-                                <div class="file-group check">
+                                <div class="file-group">
                                     <div class="file-area">
-                                        <i class="ico i-file-check"></i>
-                                        <p>filename.png</p>
                                         <input type="file" id="fileUpload">
-                                        <label for="fileUpload" class="file-label"><i
-                                                class="ico i-refresh"></i>다시올리기</label>
+                                        <label for="fileUpload" class="file-label"><i class="ico i-file"></i>클릭하여 파일
+                                            업로드</label>
+
                                     </div>
                                     <small>PDF 혹은 이미지 파일(PNG, JPG)만 업로드 할 수 있습니다.</small>
                                 </div>
@@ -280,63 +284,14 @@
                                 </div>
                                 <div class="regular-item-op">
                                     <div class="check-group md">
-                                        <input type="checkbox" id="chk11">
-                                        <label for="chk11">없음</label>
+                                        <input type="checkbox" class="input-none" id="chk200">
+                                        <label for="chk200">없음</label>
                                     </div>
                                     <button type="button" class="btn btn-md btn-gray btn-invest-add">추가</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="regular-item">
-                            <h1>등록</h1>
-                            <div class="regular-area vertical">
-                                <table class="table" id="registration">
-                                    <colgroup>
-                                        <col style="width: 108px;">
-                                        <col style="width: auto;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <div class="table-header">
-                                                    <h6>등록 일자</h6>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <div class="table-header">
-                                                    <h6>명칭</h6>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="2" class="no-content-row">
-                                                <div class="no-content">
-                                                    <p>아래 입력창에 내용을 적고 추가 버튼을 누르세요</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="registration-item-add">
-                                    <div class="date-group" mbsc-page class="demo-mobile-desktop-display">
-                                        <input class="datepicker registration-date" mbsc-input data-label-style="stacked"
-                                            placeholder="등록 일자">
-                                    </div>
-                                    <div class="input-group undeline">
-                                        <input type="text" placeholder="명칭">
-                                    </div>
-                                </div>
-                                <div class="regular-item-op">
-                                    <div class="check-group md">
-                                        <input type="checkbox" id="chk15">
-                                        <label for="chk15">없음</label>
-                                    </div>
-                                    <button type="button" class="btn btn-md btn-gray btn-regi-add">추가</button>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <button type="button" class="btn btn-lg btn-primary btn-next" disabled>다음으로</button>
                     </div>
                 </div>

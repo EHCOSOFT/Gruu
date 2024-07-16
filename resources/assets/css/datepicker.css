@@ -44,3 +44,7 @@
 .mbsc-ios.mbsc-calendar-day-text {
     color: var(--neutrals-200);
 }
+
+.mbsc-calendar-day-inner {
+    background: var(--neutrals-800);
+}

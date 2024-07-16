@@ -21,8 +21,18 @@ $(document).ready(function () {
                         <i class="ico i-alarm"></i>
                     </div>
                     <div class="user">
-                        <div class="user-img"></div>
-                        <p><span>김담당</span>님</p>
+                        <div class="user-profile">
+                            <div class="user-img"></div>
+                            <p><span>김담당</span>님</p>
+                        </div>
+                        <ul class="user-menu-area">
+                            <li><a href="#"><i class="ico i-profile"></i>기업 프로필</a></li>
+                            <li class="active"><a href="#"><i class="ico i-set"></i>계정 관리</a></li>
+                            <hr>
+                            <li><a href="#"><i class="ico i-about"></i>그루 소개페이지</a></li>
+                            <hr>
+                            <li><a href="#"><i class="ico i-logout"></i>로그아웃</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -317,16 +327,9 @@ $(document).ready(function () {
 
     // accordion
     $('.accordion-header').click(function () {
-        // Slide up all other accordion contents
         $('.accordion-content').not($(this).next()).slideUp();
-
-        // Remove the active class from all headers
         $('.accordion-header').not($(this)).removeClass('active');
-
-        // Slide toggle the clicked accordion content
         $(this).next('.accordion-content').slideToggle();
-
-        // Toggle the active class on the clicked header
         $(this).toggleClass('active');
     });
 
@@ -346,9 +349,65 @@ $(document).ready(function () {
     }
 
     $('#autoResizeTextarea').each(autoResizeTextarea).on('input', autoResizeTextarea);
-
-    // Optionally, trigger the input event on page load to set the initial height
     $('#autoResizeTextarea').trigger('input');
+
+    // 정기설문지
+    $('.input-none').change(function() {
+        if ($(this).is(':checked')) {
+            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', true);
+        } else {
+            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', false);
+        }
+    });
+
+    $('.input-none').change(function() {
+        if ($(this).is(':checked')) {
+            $(this).closest('.regular-item-op').prev('.regular-item-add').find('input').prop('disabled', true);
+            $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').addClass('disabled')
+;        } else {
+            $(this).closest('.regular-item-op').prev('.regular-item-add').find('input').prop('disabled', false);
+            $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').removeClass('disabled')
+        }
+    });
+
+    // input number 콤마(,)처리
+    function addCommas(nStr) {
+        nStr += '';
+        var x = nStr.split('.');
+        var x1 = x[0];
+        var x2 = x.length > 1 ? '.' + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        }
+        return x1 + x2;
+    }
+
+    function removeCommas(nStr) {
+        return nStr.replace(/,/g, '');
+    }
+
+    $('.input-number-display').on('input', function() {
+        var value = $(this).val();
+        var numericValue = removeCommas(value);
+
+        if (!isNaN(numericValue) && numericValue.length > 0) {
+            $(this).val(addCommas(numericValue));
+            $('.input-number').val(numericValue);
+        } else {
+            $(this).val('');
+            $('.input-number').val('');
+        }
+    });
+
+    // header user profile
+    $('.user-profile').click(function() {
+        $(this).next('.user-menu-area').toggleClass('active');
+    });
+
+    // $('.user').mouseleave(function() {
+    //     $('.user-menu-area').removeClass('active');
+    // });
 });
 
 mobiscroll.setOptions({
