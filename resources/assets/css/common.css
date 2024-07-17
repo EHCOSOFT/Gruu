@@ -725,6 +725,7 @@ button:hover {
 .input-group input::placeholder {
     color: var(--neutrals-400);
     font-weight: 300;
+    text-align: left;
 }
 
 .input-group input:disabled {

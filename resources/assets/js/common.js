@@ -353,12 +353,31 @@ $(document).ready(function () {
 
     // 정기설문지
     $('.input-none').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', true).val('').attr('placeholder', '');;
+        } else {
+            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', false);
+        }
+    });
+
+    // $('.input-none').change(function () {
+    //     if ($(this).is(':checked')) {
+    //         $(this).closest('.regular-item-op').prev('.regular-item-add').find('input').prop('disabled', true);
+    //         $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').addClass('disabled')
+    //             ;
+    //     } else {
+    //         $(this).closest('.regular-item-op').prev('.regular-item-add').find('input').prop('disabled', false);
+    //         $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').removeClass('disabled')
+    //     }
+    // });
+
+    $('.input-none').change(function () {
         var $tableBody = $(this).closest('.regular-area').find('#investment tbody');
-        
+
         if ($(this).is(':checked')) {
             // 테이블 내용 지우기
             $tableBody.empty();
-            
+
             // 새 행 추가
             $tableBody.append(`
                 <tr>
@@ -369,7 +388,7 @@ $(document).ready(function () {
                     </td>
                 </tr>
             `);
-            
+
             $(this).closest('.regular-item-op').prev('.regular-item-add').find('input').prop('disabled', true).val('');
             $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').addClass('disabled');
         } else {
