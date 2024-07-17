@@ -354,9 +354,9 @@ $(document).ready(function () {
     // 정기설문지
     $('.input-none').change(function () {
         if ($(this).is(':checked')) {
-            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', true).val('').attr('placeholder', '');;
+            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', true).val('').attr('placeholder', '');
         } else {
-            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', false);
+            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', false).attr('placeholder', '숫자를 적어주세요.');
         }
     });
 
