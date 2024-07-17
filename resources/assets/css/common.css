@@ -784,6 +784,7 @@ button:hover {
 
 .input-group.undeline.error small {
     font-weight: 300;
+    font-size: var(--text-mn);
 }
 
 /* checkbox */

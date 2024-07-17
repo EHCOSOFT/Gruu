@@ -88,7 +88,7 @@ $(document).ready(function () {
     });
 
     // tab
-    $('.tab').click(function() {
+    $('.tab').click(function () {
         $('.tab').removeClass('active');
         $(this).addClass('active');
     });
@@ -352,21 +352,29 @@ $(document).ready(function () {
     $('#autoResizeTextarea').trigger('input');
 
     // 정기설문지
-    $('.input-none').change(function() {
+    $('.input-none').change(function () {
+        var $tableBody = $(this).closest('.regular-area').find('#investment tbody');
+        
         if ($(this).is(':checked')) {
-            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', true);
+            // 테이블 내용 지우기
+            $tableBody.empty();
+            
+            // 새 행 추가
+            $tableBody.append(`
+                <tr>
+                    <td colspan="6" class="no-content-row">
+                        <div class="no-content">
+                            <p>아래 입력창에 내용을 적고 추가 버튼을 누르세요</p>
+                        </div>
+                    </td>
+                </tr>
+            `);
+            
+            $(this).closest('.regular-item-op').prev('.regular-item-add').find('input').prop('disabled', true).val('');
+            $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').addClass('disabled');
         } else {
-            $(this).closest('.check-group').prev('.input-area').find('input').prop('disabled', false);
-        }
-    });
-
-    $('.input-none').change(function() {
-        if ($(this).is(':checked')) {
-            $(this).closest('.regular-item-op').prev('.regular-item-add').find('input').prop('disabled', true);
-            $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').addClass('disabled')
-;        } else {
             $(this).closest('.regular-item-op').prev('.regular-item-add').find('input').prop('disabled', false);
-            $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').removeClass('disabled')
+            $(this).closest('.regular-item-op').prev('.regular-item-add').find('.dropdown-button').removeClass('disabled');
         }
     });
 
@@ -387,7 +395,7 @@ $(document).ready(function () {
         return nStr.replace(/,/g, '');
     }
 
-    $('.input-number-display').on('input', function() {
+    $('.input-number-display').on('input', function () {
         var value = $(this).val();
         var numericValue = removeCommas(value);
 
@@ -401,7 +409,7 @@ $(document).ready(function () {
     });
 
     // header user profile
-    $('.user-profile').click(function() {
+    $('.user-profile').click(function () {
         $(this).next('.user-menu-area').toggleClass('active');
     });
 
